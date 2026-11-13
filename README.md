@@ -1,25 +1,25 @@
 # Enterprise Database Modeling & Python Data Quality Pipeline
 
-## 📺 SQL Database Execution & Results Video
+## SQL Database Execution & Results Video
 👉 **[Click Here to Watch the SQL Query & Results Walkthrough](https://drive.google.com/file/d/17gd8LWC8T2OVL6MUI_SnVkGIopL65-UM/view?usp=sharing)**
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 This project covers two core sides of data engineering and analytics:
 1. **Oracle SQL Relational Database:** Designed and populated a 5-table relational database (`Inovatia Institute of Technology`) with 14 professors, 16 courses, 100 students, 270+ enrollments, and 100 attendance logs, followed by 10 analytical SQL queries.
 2. **Python Data Quality & Transformation Pipeline:** Built an automated Python workflow to audit, visualize, clean, and transform a messy dataset of 483 bank customer records into an analysis-ready table.
 
 ---
 
-## 🛠️ The Tech Stack
+## The Tech Stack
 - **Database & Querying:** Oracle SQL (`CREATE TABLE`, `IDENTITY` keys, Foreign Keys, `CHECK` constraints, Window Functions `RANK()`, `PERCENTILE_CONT`, `EXISTS`)
 - **Data Cleaning & Prep:** Python (Pandas, NumPy, Regular Expressions `re`, Datetime)
 - **Data Visualization:** Matplotlib, Seaborn, Squarify (Treemaps)
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 - `/scripts/inovatia_database.sql` -> Complete DDL schema, `INSERT` population statements, and 10 analytical queries
 - `/scripts/bank_customer_cleaning.py` -> Python scripts for issue detection, cleaning, and feature engineering
 - `/visuals/er_diagram.png` -> Entity-Relationship Diagram mapping the 5 relational tables
@@ -27,7 +27,7 @@ This project covers two core sides of data engineering and analytics:
 
 ---
 
-## 🗄️ Part 1: Oracle SQL Database & Analytical Queries
+## Part 1: Oracle SQL Database & Analytical Queries
 To streamline student, faculty, and course operations, I built a relational schema connecting five core entities: **Professors, Courses, Students, Enrollments, and Attendance**.
 
 ![Entity-Relationship Diagram](visuals/er_diagram.png)
@@ -42,7 +42,7 @@ To streamline student, faculty, and course operations, I built a relational sche
 
 ---
 
-## 🧼 Part 2: Bank Customer Data Audit & Cleaning (Python)
+## Part 2: Bank Customer Data Audit & Cleaning (Python)
 Before transforming the 483-row bank customer dataset (`table_BANK_CUSTOMERS.csv`), I wrote a diagnostic script and generated a 2×2 visual dashboard to uncover hidden data issues:
 
 ![Data Issues Dashboard](visuals/data_issues_dashboard.png)
